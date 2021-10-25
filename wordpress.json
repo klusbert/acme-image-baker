@@ -11,7 +11,7 @@
             "password": "{{user `os_password`}}",
             "identity_endpoint": "{{user `os_auth_url`}}",
             "region": "RegionOne",
-            "image_name": "{{user `image_name`}}",
+            "image_name": "wordpress1.0",
             "ssh_username": "ubuntu",
             "source_image": "{{user `source_image`}}",
             "flavor": "{{user `flavor`}}",
@@ -23,7 +23,7 @@
     ],
     "provisioners": [
         {
-            "script": "{{user `script`}}",
+            "script": "./cloud-inits/wordpress.sh",
             "type": "shell"
         }
     ]

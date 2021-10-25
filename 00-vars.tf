@@ -1,10 +1,17 @@
-variable "imagename" {
+variable "base_image_name" {
   type    = string
-  default = "baked_image_1.0"
+  default = "base-image1.0"
 }
 
+variable "wordpress_image_name" {
+  type    = string
+  default = "wordpress-image1.0"
+}
 
-
+variable "database_image_name" {
+  type    = string
+  default = "database-image_1.0"
+}
 variable "availability_zone" {
   type    = string
   default = "Education"
