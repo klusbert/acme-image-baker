@@ -1,16 +1,16 @@
 variable "base_image_name" {
   type    = string
-  default = "base-image1.1"
+  default = "base-image1.0"
 }
 
 variable "wordpress_image_name" {
   type    = string
-  default = "wordpress-image1.1"
+  default = "wordpress-image1.0"
 }
 
 variable "database_image_name" {
   type    = string
-  default = "database-image_1.0"
+  default = "database-image1.0"
 }
 variable "availability_zone" {
   type    = string
