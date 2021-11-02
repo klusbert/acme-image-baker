@@ -7,6 +7,11 @@ variable "wordpress_image_name" {
   type    = string
   default = "wordpress-image1.0"
 }
+
+variable "db_image_name" {
+  type    = string
+  default = "db-image1.0"
+}
 variable "availability_zone" {
   type    = string
   default = "Education"
